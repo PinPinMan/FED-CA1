@@ -1,0 +1,145 @@
+/* ======== Content ======= 
+    1) Grid Styles
+        1) Intro
+        2) Personality
+        3) Values
+    2) Main Border Styles
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+/* Content */
+main{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 40em 1em 5em;
+}
+
+
+/* 
+===========
+Grid 
+===========
+*/
+/* ======== Intro ======= */
+.grid-container-intro{
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  padding: 10px;
+}
+.grid-text{
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+.grid-images img{
+    width:100%;
+    padding: 20px;
+    border-radius: 15%;
+}
+#about{
+    text-align: center;
+}
+p#intro::first-letter {                                                           /* pseudo-elements */
+    font-size: 150%;
+} 
+.grid-text > p{
+    font-size: 1.3em;  
+}
+
+/* ======== Intro ======= */
+
+
+/* ======== Personality ======= */
+.grid-container-personality{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 10px;
+}
+.personalities{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.personalities h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+.personalities h4{
+    font-size: 28px;
+}
+#introverted{
+    color: rgb(43, 110, 187);
+}
+#observant{
+    color: rgb(203, 142, 0);
+}
+#thinking{
+    color: rgb(78, 156, 52);
+}
+#judging{
+    color: rgb(115, 84, 206);
+}
+#turbulent{
+    color: rgb(203, 62, 62);
+}
+.headers{
+    text-align: center;
+}
+/* ======== Personality ======= */
+
+
+/* ======== Values ======= */
+.grid-container-value{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
+}
+.values{
+    padding: 25px;
+    font-size: 10px;
+    text-align: center;
+}
+.values p{
+    font-size: 20px;
+    font-weight: 400;
+}
+/* ======== Values ======= */
+
+
+
+/* ======== Main Border Styles ======= */
+article{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+article:last-child{
+    margin-bottom: 0;
+}
+article h2{
+    font-size: 40px; 
+    font-weight: 800;
+}
+article h3{
+    font-size: 30px; 
+    font-weight: 600;
+    margin: 10px 0 25px 0;
+}
+article p{
+    font-size: 20px;
+    margin-top: 16px;
+    line-height: 24px;
+}
+.row{
+    width: 100%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2a4eb0;
+}
+a[target] {                                                                           /* attribute selectors */
+    font-weight: 800;
+    text-decoration: none;
+}
+/* ======== Main Border Styles ======= */

@@ -1,0 +1,155 @@
+/* ======== Content ======= 
+    1) Gird Styles
+        1) Intro
+        2) Enviroment Club
+        3) Clean day
+        4) Pledges
+    2) Main Border Styles
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+/* Content */
+main{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 40em 1em 5em;
+}
+
+/* 
+===========
+Grid 
+===========
+*/
+
+
+/* ======== Intro ======= */
+.grid-container-intro{
+  display: grid;
+  grid-template-columns: 50% auto auto;
+  padding: 10px;
+}
+.grid-text{
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+.grid-images img{
+    width:100%;
+    padding: 20px;
+    border-radius: 15%;
+}
+.title{
+    text-align: center;
+}
+#sp-center {
+    filter: grayscale(50%);
+}
+.grid-text>p{
+    font-size: 1.4em;
+}
+/* ======== Intro ======= */
+
+
+/* ======== Enviroment Club ======= */
+.insta img{
+    width:100%;
+    padding: 20px;
+    border-radius: 15%;
+}
+.grid-text h3{ 
+    font-weight: 600;
+}
+#sp-environment-club-poster img{                                           /*  border to an element */
+    border-style: groove;
+    border-color: green;
+    border-width: thick;
+}
+/* ======== Enviroment Club ======= */
+
+
+/* ======== Clean Day ======= */
+#clean-day-poster img{
+    width: 100%;
+}
+
+.clean-day img{
+    width:100%;
+    padding: 20px;
+    border-radius: 15%;
+}
+figure{
+    float: right;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: medium silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+figure img{
+    width: 95%;
+}
+/* ======== Clean Day ======= */
+
+
+/* ======== Pledges ======= */
+.grid-container-pledges{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+}
+.pledges{
+    text-align: center;
+}
+.pledges h4{
+    font-weight: 800;
+    font-size: 30px;
+}
+.pledges h5{
+    padding-top: 1em;
+    font-weight: 600;
+    font-size: 20px;
+}
+.pledges p{
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0em 1em;
+}
+/* ======== Pledges ======= */
+
+
+/* ======== Main Border Styles ========*/
+article{
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+article:last-child{
+    margin-bottom: 0;
+}
+article h2{
+    font-size: 40px; 
+    font-weight: 800;
+}
+article h3{
+    font-size: 35px; 
+    font-weight: 600;
+    margin: 10px 0 25px 0;
+}
+article p{
+    font-size: 20px;
+    margin-top: 16px;
+    line-height: 24px;
+    
+}
+.row{
+    width: 100%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2a4eb0;
+}
+/* ======== Main Border Styles ========*/

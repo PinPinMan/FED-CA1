@@ -1,0 +1,152 @@
+/* ======== Content ======= 
+    1) Gird Styles
+        1) Intro
+        2) Measures
+        3) Goals
+        4) Readers
+    2) Main Border Styles
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+/* Content */
+main{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 40em 1em 5em;
+}
+
+/* 
+===========
+Grid 
+===========
+*/
+
+
+/* ======== Intro ======= */
+.grid-container-intro{
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  padding: 10px;
+}
+.grid-text{
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+.grid-images img{
+    width:100%;
+    padding: 20px;
+    border-radius: 15%;
+}
+.grid-text > p{
+    font-weight: 300;
+    font-size: 1.4em;
+}
+/* ======== Intro ======= */
+
+
+/* ======== Measures ======= */
+.grid-container-measures{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+.team{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.team h3{
+    font-size: 3em;
+    font-weight: 800;
+}
+.team #treelogo img{
+    width: 100%;
+}
+#seas{
+    color: rgb(4, 171, 171);
+}
+#trees{
+    color: rgb(7, 171, 18);
+}
+#treetext{
+    padding: 7em 1em 0em;
+}
+a{
+    text-decoration: none;
+    font-weight: 900;
+}
+.headers{
+    text-align: center;
+}
+/* ======== Measures ======= */
+
+
+/* ======== goals ======= */
+.grid-container-goals{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
+}
+.goals{
+    padding: 30px;
+    font-size: 10px;
+    text-align: center;
+}
+.goals img{
+    width:100%;
+    padding: 20px;
+    border-radius: 15%;
+
+}
+.goals p{
+    font-size: 20px;
+    font-weight: 400;
+}
+/* ======== goals ======= */
+
+
+/* ======== readers ======= */
+#things-for-reader img{
+    display: block;
+    padding-top: 1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ======== readers ======= */
+
+
+/* ======== Main Border Styles ========*/
+article{
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+article:last-child{
+    margin-bottom: 0;
+}
+article h2{
+    font-size: 40px; 
+    font-weight: 800;
+}
+article h3{
+    font-size: 30px; 
+    font-weight: 600;
+    margin: 10px 0 25px 0;
+}
+article p{
+    font-size: 20px;
+    margin-top: 16px;
+    line-height: 24px;
+    
+}
+.row{
+    width: 100%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2a4eb0;
+}
+/* ======== Main Border Styles ========*/

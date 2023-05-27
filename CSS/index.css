@@ -1,0 +1,87 @@
+/* ======== Content ======= 
+    1) Grid Styles
+        1) Profile Picture
+        2) Text
+        3) Pages
+        4) NavBar
+*/
+
+
+main{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5.8em 1em;
+}
+article{
+    background-color: rgba(214, 214, 214, 0.877);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/*  
+=================
+GRID
+================= */
+.grid-container{
+    display: grid;
+    padding: 10px;
+}
+.pfp img{
+    display: block;
+    width:10%;
+    border-radius: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ======== Text ======= */
+.text{
+    padding: 2em;
+    text-align: center;
+}
+.text h1{
+    font-weight: 700;
+    font-size: 2em;
+    padding: 0.5em;
+}
+.text h2{
+    font-weight: 500;
+    font-size: 1.2em;
+}
+/* ======== Text ======= */
+
+
+/* ======== Pages ======= */
+.pages{
+    text-align: center;
+    padding: 1em;
+    font-weight: 700;
+    background-color: #fff; 
+}
+.pages a:link {
+    text-decoration: none;
+    padding: 2em;
+    color: rgba(0, 0, 0, 0.7);
+}
+.pages a:visited {
+    text-decoration: none;
+}
+.pages a:hover {
+    color: rgb(0, 0, 0);
+}
+.pages a:active {
+    text-decoration: underline; 
+}
+/* ======== Pages ======= */
+
+
+/* ======== NavBar ======= */
+.navbar{
+    padding: 1em;
+    text-align: center;
+}
+.navbar h1{
+    padding: 1em;
+}
+/* ======== NaveBar ======= */

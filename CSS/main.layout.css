@@ -1,0 +1,172 @@
+/* ======== Content ======= 
+    1) Header
+    2) Body
+    3) Footer
+    4) NavBar
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ======== Header ======= */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;        /* always the top */
+    background-color: rgba(0,0,0,0.5);
+}
+.sitelogo img {
+    max-height: 75px;
+    border-radius: 50%;
+}
+.sitelogo{
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    margin: auto;
+    margin-left: 1vw;
+}
+
+.logo{
+    font-size: 3em;
+    color: #fff;
+    user-select: none;
+}
+/* ======== Header ======= */
+
+
+/* ======== Body ======= */
+body{
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Graphics/forest1.jpg);        /* Sources https://www.freepik.com/free-vector/cartoon-forest-landscape_22898249.htm#query=dark%20forest&position=0&from_view=keyword&track=ais */
+    background-size: cover;
+    background-repeat:  no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* 
+centertext
+• Give it an absolute position
+• Transform the text to make it center
+• Make font-size 75px and font be Caveat
+• Make text white and give text a black shadow of 0.75 opacity
+• Make text centered and if text too long, break-word to auto break them to lines
+*/
+.centertext {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-family: 'Caveat', cursive;
+    color: white;
+    text-shadow: 0.065em 0.065em hsla(0, 0%, 0%, 0.75);
+    text-align: center;
+    word-wrap: break-word;
+}
+/* ======== Body ======= */
+
+
+/* ======== FOOTER ======= */
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+}
+.footerContainer{
+    width: 100%;
+    padding: 10px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.8;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+footer h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 12px;
+    padding-bottom: 5px;
+}
+.footerBottom{
+    background-color: rgba(7, 7, 100, 0.7);
+    padding: 20px;
+    text-align: center;
+} 
+.footerBottom p{
+    color: white;  
+}
+.designer{
+    font-weight: 700;
+    margin: 0px 5px;
+}
+/* ======== FOOTER ======= */
+
+
+/* ======== NavBar ======= */
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);                                            /* 2D Transformation */
+    transition: transform 0.5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+/* ======== NavBar ======= */
+
+
+/* Sources https://www.freepik.com/free-vector/cartoon-forest-landscape_22898249.htm#query=dark%20forest&position=0&from_view=keyword&track=ais */
